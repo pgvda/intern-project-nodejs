@@ -6,7 +6,7 @@ exports.getAllCustomers = async () => {
 
 exports.createCustomer = async (customerData) => {
     const customer = new Customer(customerData);
-    return await customer.save();
+    return await customer.save();thor
 }
 
 exports.deleteCustomer = async (customerId) => {

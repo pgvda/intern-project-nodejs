@@ -4,6 +4,11 @@ const Schema = mongoose.Schema;
 
 const orderSchema = new Schema({
 
+    customerId: {
+        type: String,
+        require: true
+    },
+
     customerName: { 
         type: String, 
         required: true 
@@ -23,10 +28,10 @@ const orderSchema = new Schema({
         type: String, 
         default: 'Pending' 
     }, 
-    createdAt: { 
-        type: Date, 
-        default: Date.now 
-    }
+    // createdAt: { 
+    //     type: Date, 
+    //     default: Date.now 
+    // }
 
 })
 
